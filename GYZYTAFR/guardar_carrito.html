@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar al Carrito</title>
+</head>
+<body>
+  <h2>Agregar producto al carrito</h2>
+
+  <form action="agregar_carrito.php" method="POST">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required><br><br>
+
+    <label>Detalles:</label>
+    <input type="text" name="detalles" required><br><br>
+
+    <label>Precio:</label>
+    <input type="number" name="precio" step="0.01" required><br><br>
+
+    <button type="submit">Agregar</button>
+  </form>
+</body>
+</html>

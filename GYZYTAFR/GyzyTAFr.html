@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="GyzyTAFr.html" class="logo">GyzyTAFr</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icon" alt="Menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="GyzyTAFr.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="tareas.html">Tareas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="compras.html"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Bienvenido a GyzyTAFr</h1>
+                <p>
+                    Explora nuestra vasta selección de Lenguajes exclusivos y disfruta de nuestros descuentos especiales. Encuentra tu Lenguaje perfecto aquí.
+                </p>
+                <a href="productos.html" class="btn-1">Explorar Colección</a>
+            </div>
+        </div>
+        <div class="images">
+            <div class="swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="1.jpg" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="2.jpg" alt="C++">
+                        <h3>C++</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="3.jpg" alt="Python">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="4.jpg" alt="CSS">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="5.jpg" alt="Lua">
+                        <h3>Lua</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 10,
+        grabCursor: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+            991: {
+                slidesPerView: 3
+            }
+        }
+    });
+    </script>
+</body>
+</html>
+
